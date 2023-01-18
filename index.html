@@ -7,54 +7,61 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="./style.css"/>
   
 </head>
 <body class="root">
   <header class="header">
-    <a class="logo" href=""></a>
-    <nav class="header__menu">
-      <ul class="header__list">
-        <li class="header__list-item"><a class="header__link" href="#">About</a></li>
-        <li class="header__list-item"><a class="header__link" href="#">Services</a></li>
-        <li class="header__list-item"><a class="header__link" href="#">Projects</a></li>
-        <li class="header__list-item"><a class="header__link" href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="header__container">
+      <a class="header__logo-link" href="/"><img class="header__logo" src="./images/logo.svg" alt="Sunnyside's logo"></a>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__list-item"><a class="header__link" href="#">About</a></li>
+          <li class="header__list-item"><a class="header__link" href="#">Services</a></li>
+          <li class="header__list-item"><a class="header__link" href="#">Projects</a></li>
+          <li class="header__list-item"><button class="header__button" type="button">Contact</button></li>
+        </ul>
+      </nav>
+    </div>    
+    <h1 class="header__text">We are creatives</h1>
+    <img class="header__icon" src="./images/icon-arrow-down.svg" alt="icon arrow down">    
   </header>
 
   <div class="main">
-    <h1 class="main__heading">We are creatives</h1>
-  </div>
-
-  <div class="container">
-    <div class="container__item">
-      <h2 class="container__heading">Transform your brand</h2>      
-      <p class="container__text">We are a full-service creative agency specializing in helping brands grow fast. 
+    <div class="main__item  main__item_image-1">
+      <h2 class="main__heading">Transform your brand</h2>      
+      <p class="main__text">We are a full-service creative agency specializing in helping brands grow fast. 
       Engage your clients through compelling visuals that do most of the marketing for you.</p>
-      <a class="container__link" href="">Learn more</a>
+      <a class="main__link" href="">Learn more</a>
     </div>
 
-    <div class="container__item"></div>
+    <div class="main__item main__item_image-2">
+    </div>
 
-    <div class="container__item"></div>
+    <div class="main__item main__item_image-3">
+    </div>
 
-    <div class="container__item">
-      <h2 class="container__heading">Stand out to the right audience</h2>
-      <p class="container__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
+    <div class="main__item main__item_image-4">
+      <h2 class="main__heading">Stand out to the right audience</h2>
+      <p class="main__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
         we’ll build and extend your brand in digital places.</p> 
-      <a class="container__link" href="">Learn more</a>
+      <a class="main__link" href="">Learn more</a>
     </div>
 
-    <div class="container__item">
-      <h3 class="container__heading" >Graphic design</h3>
-      <p class="container__text">Great design makes you memorable. We deliver artwork that underscores your brand message 
+    <div class="main__item main__item_image-5">
+      <h3 class="main__heading" >Graphic design</h3>
+      <p class="main__text">Great design makes you memorable. We deliver artwork that underscores your brand message 
         and captures potential clients’ attention.</p>
     </div>
 
-    <div class="container__item">
-      <h3 class="container__heading">Photography</h3>
-      <p class="container__text">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+    <div class="main__item main__item_image-6">
+      <h3 class="main__heading">Photography</h3>
+      <p class="main__text">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
     </div>
   </div>
 
