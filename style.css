@@ -1,11 +1,9 @@
-/* font-family: 'Barlow', sans-serif;
-font-family: 'Fraunces', serif; */
-
 .root {
     background-color: hsl(0, 0%, 100%);
     font-family: 'Barlow', sans-serif;
-    color: rgb(0, 0, 0);
-    font-weight: 500;
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(26, 100%, 99%);
+    font-weight: 600;
     font-size: 18px;
     margin: 0;
     min-height: 100vh;
@@ -31,17 +29,23 @@ font-family: 'Fraunces', serif; */
     margin-bottom: 104px;
 }
 
-.header__link {
+.link {
+    outline: none;
     text-decoration: none;
-    font-size: 16px;
+    letter-spacing: -0.01rem;
     color: hsl(0, 0%, 100%);
 }
 
-.header__logo {
+.link:hover {
+    color: hsl(201, 100%, 90%);
+    transition: 0.2s;
+}
+
+.logo {
     width: 170px;
 }
 
-.header__list {
+.list {
     list-style: none;
     padding: 0px;
     margin: 0px;
@@ -52,8 +56,11 @@ font-family: 'Fraunces', serif; */
     width: 32.5vw;
 }
 
-.header__list-item {
+.list-item {
     letter-spacing: 0.05em;
+}
+
+.header__list-item {
     margin-right: 8px;
 }
 
@@ -61,22 +68,30 @@ font-family: 'Fraunces', serif; */
     background-color: hsl(0, 0%, 100%);
     border-radius: 34px;
     border: none;
-    box-shadow: 2px 2px 5px rgb(0 165 255);
+    box-shadow: 2px 2px 5px hsl(201, 100%, 50%);
     color: hsl(198, 62%, 26%);
-    padding: 19px 32px;
-    letter-spacing: -0.05em;
+    padding: 18px 32px;
+    letter-spacing: -0.05rem;
     font-family: 'Fraunces', serif;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 0.99rem;
+}
+
+.header__button:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(201, 100%, 70%);
+    transition: 0.2s;    
 }
 
 .header__text {
     font-family: 'Fraunces', serif;
     text-transform: uppercase;
-    letter-spacing: 0.23em;
-    font-size: 54px;
+    letter-spacing: 0.65rem;
+    font-size: 3.5rem;
+    font-weight: 900;
     color: hsl(0, 0%, 100%);
     margin: 0px 0px 94px 0px;
 }
@@ -84,48 +99,234 @@ font-family: 'Fraunces', serif; */
 .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 600px 600px 600px;
+    grid-template-rows: 37.5rem 37.5rem 37.5rem;
 }
 
 .main__item {
-    padding: 157px 100px 157px 165px;
+    padding: 157px 109px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.main__item_image-2 {
+.main__item_image_2 {
     background-image: url('./images/desktop/image-transform.jpg');
 }
 
-.main__item_image-3 {
+.main__item_image_3 {
     background-image: url('./images/desktop/image-stand-out.jpg');
 }
 
-.main__item_image-5 {
+.main__item_image_5 {
     background-image: url('./images/desktop/image-graphic-design.jpg');
 }
 
-.main__item_image-6 {
-    background-image: url('./images/desktop/image-photography.jpg');
+.main__item_image_6{
+    background-image: url('./images/desktop/image-photography.jpg');    
+}
+
+.main__item_padding_left {
+    padding-left: 165px;
+}
+
+.main__item_padding_right {
+    padding-right: 165px;
+}
+
+.main__item_centered {
+    padding: 397px 195px 54px;
+    text-align: center;
 }
 
 .main__heading {
     margin: 0px 0px 32px 0px;
     font-family: 'Fraunces', serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 900;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02rem;
+    color: hsl(215, 26%, 20%);
 }
 
 .main__text {
-    margin: 0px 0px 40px 0px;
-    font-size: 20px;
+    margin: 0px 0px 42px 0px;
+    font-size: 1.15rem;
+    letter-spacing: -0.02rem;
+    line-height: 1.6;
+    color: hsl(247, 4%, 53%);
+}
+
+.font-color_1 {
+    color: hsl(167, 40%, 24%);
+}
+
+.font-color_2 {
+    color: hsl(198, 62%, 26%);
+}
+
+.main__heading_small {
+    margin: 0px 0px 28px 0px;
+    font-size: 1.8rem;
+    letter-spacing: -0.025rem;
+}
+
+.main__text_small {
     line-height: 1.5;
+    font-size: 1.1rem;
+    letter-spacing: -0.05rem;
 }
 
 .main__link {
     font-family: 'Fraunces', serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 900;
+    letter-spacing: 0.02rem;
     text-transform: uppercase;
     text-decoration: none;
     color: black;
+    padding: 0px 8px 2px;
+    position: relative;
+    z-index: 1;
+}
+
+.main__link:hover {
+    cursor: pointer;
+}
+
+.main__link:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 10px;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.main__link_style_1:after {
+    background-color: hsl(51, 100%, 85%);
+}
+
+.main__link_style_2:after {
+    background-color: hsl(7, 99%, 90%);
+}
+
+.main__link_style_1:hover:after {
+    background-color: hsl(51, 100%, 49%);
+    transition: 0.2s;
+}
+
+.main__link_style_2:hover:after {
+    background-color: hsl(7, 99%, 70%);
+    transition: 0.2s;
+}
+
+.feedback {
+    text-align: center;
+    padding: 161px 168px;
+}
+
+.feedback__heading {
+    margin: 0px 0px 81px;
+    letter-spacing: 0.38rem;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: hsl(247, 4%, 53%);
+}
+
+.feedback__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+
+.feedback__list-item {
+    margin: 0px;
+    width: 345px;
+}
+
+.feedback__picture {
+    border-radius: 50%;
+    width: 74px;
+    height: 74px;
+    margin: 0px 0px 56px;
+}
+
+.feedback__quote{
+    margin: 0px 0px 71px;
+    letter-spacing: -0.01rem;
+    line-height: 1.9rem;
+    color: hsl(215, 26%, 20%);
+}
+
+.feedback__caption {
+    font-style: normal;
+    display: inline-block;
+    margin-right: 17px;
+}
+
+.feedback__name {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    margin: 0px 0px 15px;
+}
+
+.feedback__profession {
+    font-size: 0.8rem;
+    letter-spacing: 0.03rem;
+    margin: 0px;
+    color: hsl(247, 4%, 53%);
+}
+
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.gallery_item {
+    display: block;
+    width: 100%;
+}
+
+.footer {
+    color: hsl(168, 34%, 41%);
+    background-color: hsl(165, 42%, 71%);
+    padding: 73px 40px;
+    text-align: center;
+}
+
+.footer__link-list {
+    margin: 0px auto 90px;
+    justify-content: space-between;
+    width: 296px;
+}
+
+.footer__logo-link {
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 40px;
+}
+
+.footer__list {
+    margin: auto;
+    width: 165px;
+}
+
+.footer__link {
+    color: inherit;
+}
+
+.footer__logo {
+    fill: hsl(168, 34%, 41%);
+}
+
+.attribution {
+    text-align: center;
+    background-color: hsl(199, 93%, 82%);
+    color: hsl(0, 0%, 100%);
+    padding: 20px 0px;
 }

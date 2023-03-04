@@ -18,13 +18,13 @@
 <body class="root">
   <header class="header">
     <div class="header__container">
-      <a class="header__logo-link" href="/"><img class="header__logo" src="./images/logo.svg" alt="Sunnyside's logo"></a>
+      <a class="header__logo-link" href="/"><img class="header__logo logo" src="./images/logo.svg" alt="Sunnyside's logo"></a>
       <nav class="header__menu">
-        <ul class="header__list">
-          <li class="header__list-item"><a class="header__link" href="#">About</a></li>
-          <li class="header__list-item"><a class="header__link" href="#">Services</a></li>
-          <li class="header__list-item"><a class="header__link" href="#">Projects</a></li>
-          <li class="header__list-item"><button class="header__button" type="button">Contact</button></li>
+        <ul class="header__list list">
+          <li class="header__list-item list-item"><a class="header__link link" href="#">About</a></li>
+          <li class="header__list-item list-item"><a class="header__link link" href="#">Services</a></li>
+          <li class="header__list-item list-item"><a class="header__link link" href="#">Projects</a></li>
+          <li class="header__list-item list-item"><button class="header__button" type="button">Contact</button></li>
         </ul>
       </nav>
     </div>    
@@ -33,81 +33,113 @@
   </header>
 
   <div class="main">
-    <div class="main__item  main__item_image-1">
+    <div class="main__item  main__item_image_1 main__item_padding_left">
       <h2 class="main__heading">Transform your brand</h2>      
       <p class="main__text">We are a full-service creative agency specializing in helping brands grow fast. 
       Engage your clients through compelling visuals that do most of the marketing for you.</p>
-      <a class="main__link" href="">Learn more</a>
+      <a class="main__link main__link_style_1" href="">Learn more</a>
     </div>
 
-    <div class="main__item main__item_image-2">
+    <div class="main__item main__item_image_2 main__item_padding_right">
     </div>
 
-    <div class="main__item main__item_image-3">
+    <div class="main__item main__item_image_3 main__item_padding_left">
     </div>
 
-    <div class="main__item main__item_image-4">
+    <div class="main__item main__item_image_4 main__item_padding_right">
       <h2 class="main__heading">Stand out to the right audience</h2>
       <p class="main__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
         we’ll build and extend your brand in digital places.</p> 
-      <a class="main__link" href="">Learn more</a>
+      <a class="main__link main__link_style_2" href="">Learn more</a>
     </div>
 
-    <div class="main__item main__item_image-5">
-      <h3 class="main__heading" >Graphic design</h3>
-      <p class="main__text">Great design makes you memorable. We deliver artwork that underscores your brand message 
+    <div class="main__item main__item_image_5 main__item_centered">
+      <h3 class="main__heading main__heading_small  font-color_1">Graphic Design</h3>
+      <p class="main__text main__text_small font-color_1">Great design makes you memorable. We deliver artwork that underscores your brand message 
         and captures potential clients’ attention.</p>
     </div>
 
-    <div class="main__item main__item_image-6">
-      <h3 class="main__heading">Photography</h3>
-      <p class="main__text">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+    <div class="main__item main__item_image_6 main__item_centered main__item_font-color_2">
+      <h3 class="main__heading main__heading_small font-color_2">Photography</h3>
+      <p class="main__text main__text_small font-color_2">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
     </div>
   </div>
 
   <div class="feedback">
-    <h2 class="feedback__heading">Client testimonials</h2>
-
-    <figure class="feedback__quote">
-      <blockquote>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</blockquote>
-      <figcaption><cite>Emily R. 
-        Marketing Director</cite></figcaption>
-    </figure>
-     
-    <figure class="feedback__quote">
-      <blockquote>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</blockquote>
-      <figcaption><cite>Thomas S.
-        Chief Operating Officer</cite></figcaption>
-    </figure>
-  
-    <figure class="feedback__quote">
-      <blockquote>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</blockquote>
-      <figcaption><cite>Jennie F.
-        Business Owner</cite></figcaption>
-    </figure>
+    <h2 class="feedback__heading">Client testimonials</h2>    
+    <ul class="feedback__list">
+      <li class="feedback__list-item">
+        <img class="feedback__picture" src="./images/image-emily.jpg" alt="Emily's photo">
+        <blockquote class="feedback__quote">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</blockquote>
+        <cite class="feedback__caption">
+          <p class="feedback__name">Emily R.</p>
+          <p class="feedback__profession">Marketing Director</p>
+        </cite>
+      </li>
+      
+      <li class="feedback__list-item">
+        <img class="feedback__picture" src="./images/image-thomas.jpg" alt="Thomas's photo">
+        <blockquote class="feedback__quote">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</blockquote>
+        <cite class="feedback__caption">
+          <p class="feedback__name">Thomas S.</p>
+          <p class="feedback__profession">Chief Operating Officer</p>
+        </cite>
+      </li>
+      
+      <li class="feedback__list-item">
+        <img class="feedback__picture" src="./images/image-jennie.jpg" alt="Jennie's photo">
+        <blockquote class="feedback__quote">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</blockquote>
+        <cite class="feedback__caption">
+          <p class="feedback__name">Jennie F.</p>
+          <p class="feedback__profession">Business Owner</p>
+        </cite>
+      </li>      
+    </ul>    
   </div>
 
-  <div class="carousel">
-    <div class="carousel_item"></div>
-    <div class="carousel_item"></div>
-    <div class="carousel_item"></div>
-    <div class="carousel_item"></div>
+  <div class="gallery">
+    <img class="gallery_item" src="./images/desktop/image-gallery-milkbottles.jpg" alt="">
+    <img class="gallery_item" src="./images/desktop/image-gallery-orange.jpg" alt="">
+    <img class="gallery_item" src="./images/desktop/image-gallery-cone.jpg" alt="">
+    <img class="gallery_item" src="./images/desktop/image-gallery-sugarcubes.jpg" alt="">
   </div>
 
   <footer class="footer">
     <nav class="footer__menu">
-      <ul class="footer__list">
-        <li class="footer__list-item"><a class="footer__link" href="#">About</a></li>
-        <li class="footer__list-item"><a class="footer__link" href="#">Services</a></li>
-        <li class="footer__list-item"><a class="footer__link" href="#">Projects</a></li>
-        <li class="footer__list-item"><a class="footer__link" href="#">Contact</a></li>
+      <a class="footer__logo-link link" href="/"><img class="footer__logo logo" src="./images/logo.svg" alt="Sunnyside's logo"></a>
+      <ul class="footer__link-list list">
+        <li class="footer__link-list-item list-item"><a class="footer__link link" href="#">About</a></li>
+        <li class="footer__link-list-item list-item"><a class="footer__link link" href="#">Services</a></li>
+        <li class="footer__link-list-item list-item"><a class="footer__link link" href="#">Projects</a></li>
+      </ul>
+      <ul class="footer__list list">
+        <li class="footer__list-item list-item">
+          <a class="footer__link link" href="#">
+            <img class="footer__socials" src="./images/icon-facebook.svg" alt="Facebook icon">
+          </a>
+        </li>
+        <li class="footer__list-item list-item">
+          <a class="footer__link link" href="#">
+            <img class="footer__socials" src="./images/icon-instagram.svg" alt="Instagram icon">
+          </a>
+        </li>
+        <li class="footer__list-item list-item">
+          <a class="footer__link link" href="#">
+            <img class="footer__socials" src="./images/icon-twitter.svg" alt="Twitter icon">
+          </a>
+        </li>
+        <li class="footer__list-item list-item">
+          <a class="footer__link link" href="#">
+            <img class="footer__socials" src="./images/icon-pinterest.svg" alt="Pinterest icon">
+          </a>
+        </li>
       </ul>
     </nav>
   </footer>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Sonya Puolakainen</a>.
+    Challenge by <a class="link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="link" href="#">Sonya Puolakainen</a>.
   </div>
 </body>
 </html>
